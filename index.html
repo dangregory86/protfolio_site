@@ -11,32 +11,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   </head>
 
   <body>
     <!-- The top section of the page with a log and my name/description -->
-    <header class="header">
-      <div>
-        <div class="logo">
+    <header class="header container-fluid">
+      <div class="row">
+        <div class="logo col-md-1">
           <img src="images/British_Army_Ammunition_Technician_Badge.jpg" alt="AT badge">
         </div>
-        <div class="title">
+        <div class="title logo col-md-12 ">
           <h1>Dan Gregory</h1>
           <h3>EOD Operator/Code enthusiast!!</h3>
         </div>
-      </div>
     </header>
+    </div>
     <div class="main_section">
       <!-- image taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2011/11/05/19/Newpic.jpg
             image of EOD operator by a wheelbarow-->
+
       <img class="main_image" src="images/EOD_operator_and_wheelbarow.jpg" alt="EOD operator and wheelbaror">
-      <div>
-        <h2 class="bottom_title">Featured work!</h2>
+      <h2 class="bottom_title">Featured work!</h2>
+      <div class="row">
+
         <!-- The bottom section of the page split into 3 columns which showcase my previous work-->
-        <div class="bottom_section">
+        <div class="bottom_section container-fluid">
           <a href="https://github.com/wonkydan/memory_game">
-            <div class="bottom_item">
+            <div class="bottom_item col-xs-3">
               <figure>
                 <img src="images/match_game.gif" alt="placeholder" class="bottom_img">
                 <figcaption>
@@ -51,7 +55,7 @@
             </div>
           </a>
           <a href="https://github.com/wonkydan/Make_a_webpage_udacity_project">
-            <div class="bottom_item">
+            <div class="bottom_item col-xs-3">
               <figure>
                 <img src="images/site.gif" alt="placeholder" class="bottom_img">
                 <figcaption>
@@ -66,7 +70,7 @@
             </div>
           </a>
           <a href="https://github.com/wonkydan/KitInventoryApp">
-            <div class="bottom_item">
+            <div class="bottom_item col-xs-3">
               <figure>
                 <img src="images/kit_app.png" alt="placeholder" class="bottom_img">
                 <figcaption>
