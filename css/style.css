@@ -7,24 +7,31 @@ figcaption {
   text-align: center;
 }
 
+.all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   width: 100%;
   border-bottom: 3px solid #7d97ad;
-  column-count: 2;
   margin-bottom: 20px;
+  display: inline-flex;
 }
 
 .logo {
   width: 70%;
   padding-top: 5%;
-  padding-bottom: 10%;
-  padding-left: 10%
+  padding-bottom: 10px;
+  padding-left: 5%;
 }
 
 .title {
   text-align: right;
   padding-top: 5%;
-  padding-right: 10%
+  padding-left: 10%;
+  padding-right: 5%;
 }
 
 .main_section {
@@ -48,18 +55,48 @@ figcaption {
 .bottom_section {
   width: 100%;
   column-count: 3;
+  display: flex;
 }
 
 .bottom_item {
   color: #2d3c49;
-  width: 100%;
+  width: 33%;
+  max-width: 33%;
   border: 3px solid #7d97ad;
-  margin-bottom: : 5px;
-  margin-bottom: 2em;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .bottom_img {
   width: 100%;
   height: auto;
+  max-height: 5em;
   max-height: 300px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 426px) {
+  .bottom_section {
+    column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bottom_item {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    display: none;
+  }
+  .bottom_section {
+    column-count: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bottom_item {
+    width: 100%;
+    max-width: 100%;
+  }
 }

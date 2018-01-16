@@ -8,82 +8,89 @@
     <!-- This is the title of your page (what appears in the name of a browser tab) -->
     <title>Dans Portfolio</title>
     <!-- The bootstrap css stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- importing flexbox -->
+    <link rel="stylesheet" href="https://unpkg.com/flexbox-style@latest/flexbox.min.css" />
     <link rel="stylesheet" href="css/style.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
   </head>
 
   <body>
-    <!-- The top section of the page with a log and my name/description -->
-    <header class="header container-fluid">
-      <div class="row">
-        <div class="logo col-md-1">
+    <div class="all">
+      <!-- The top section of the page with a log and my name/description -->
+      <header class="header">
+        <div class="logo">
           <img src="images/British_Army_Ammunition_Technician_Badge.jpg" alt="AT badge">
         </div>
-        <div class="title logo col-md-12 ">
+        <div class="title">
           <h1>Dan Gregory</h1>
           <h3>EOD Operator/Code enthusiast!!</h3>
         </div>
-    </header>
-    </div>
-    <div class="main_section">
-      <!-- image taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2011/11/05/19/Newpic.jpg
+      </header>
+      <div class="main_section">
+        <!-- image taken from https://static.independent.co.uk/s3fs-public/thumbnails/image/2011/11/05/19/Newpic.jpg
             image of EOD operator by a wheelbarow-->
-
-      <img class="main_image" src="images/EOD_operator_and_wheelbarow.jpg" alt="EOD operator and wheelbaror">
-      <h2 class="bottom_title">Featured work!</h2>
-      <div class="row">
-
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img class="main_image" src="images/EOD_operator_and_wheelbarow.jpg" alt="EOD operator and wheelbaror">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2 class="bottom_title">Featured work!</h2>
+          </div>
+        </div>
         <!-- The bottom section of the page split into 3 columns which showcase my previous work-->
-        <div class="bottom_section container-fluid">
-          <a href="https://github.com/wonkydan/memory_game">
-            <div class="bottom_item col-xs-3">
-              <figure>
-                <img src="images/match_game.gif" alt="placeholder" class="bottom_img">
-                <figcaption>
-                  <p>
-                    Memory game!
-                  </p>
-                  <p>
-                    https://github.com/wonkydan/memory_game
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </a>
-          <a href="https://github.com/wonkydan/Make_a_webpage_udacity_project">
-            <div class="bottom_item col-xs-3">
-              <figure>
-                <img src="images/site.gif" alt="placeholder" class="bottom_img">
-                <figcaption>
-                  <p>
-                    Make a webpage!
-                  </p>
-                  <p>
-                    https://github.com/wonkydan/Make_a_webpage_udacity_project
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </a>
-          <a href="https://github.com/wonkydan/KitInventoryApp">
-            <div class="bottom_item col-xs-3">
-              <figure>
-                <img src="images/kit_app.png" alt="placeholder" class="bottom_img">
-                <figcaption>
-                  <p>
-                    Kit inventory android app!
-                  </p>
-                  <p>
-                    https://github.com/wonkydan/KitInventoryApp
-                  </p>
-                </figcaption>
-              </figure>
-            </div>
-          </a>
+        <div class="bottom_section">
+          <div class="bottom_item">
+            <a href="https://github.com/wonkydan/memory_game">
+              <div class="container">
+                <figure>
+                  <img src="images/match_game.gif" alt="placeholder" class="bottom_img">
+                  <figcaption>
+                    <p>
+                      Memory game!
+                    </p>
+                    <p>
+                      Link to project github.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
+          <div class="bottom_item">
+            <a href="https://github.com/wonkydan/Make_a_webpage_udacity_project">
+              <div class="container">
+                <figure>
+                  <img src="images/site.gif" alt="placeholder" class="bottom_img">
+                  <figcaption>
+                    <p>
+                      Make a webpage!
+                    </p>
+                    <p>
+                      Link to project github.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
+          <div class="bottom_item">
+            <a href="https://github.com/wonkydan/KitInventoryApp">
+              <div class="container">
+                <img src="images/kit_app.gif" alt="placeholder" class="bottom_img">
+                <p>
+                  Kit inventory android app!
+                </p>
+                <p>
+                  Link to project github.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
