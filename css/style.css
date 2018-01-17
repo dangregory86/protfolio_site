@@ -11,13 +11,14 @@ figcaption {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header {
   width: 100%;
   border-bottom: 3px solid #7d97ad;
   margin-bottom: 20px;
-  display: inline-flex;
+  display: flex;
 }
 
 .logo {
@@ -56,6 +57,8 @@ figcaption {
   width: 100%;
   column-count: 3;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .bottom_item {
@@ -65,30 +68,35 @@ figcaption {
   border: 3px solid #7d97ad;
   display: inline-flex;
   flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  flex: 0 1 32%;
 }
 
 .bottom_img {
   width: 100%;
-  height: auto;
-  max-height: 5em;
-  max-height: 300px;
+  flex-grow: 10;
 }
 
-@media screen and (max-width: 900px) and (min-width: 426px) {
+.bottom_text {
+  width: 100%;
+  flex-grow: 2;
+}
+
+@media screen and (max-width: 850px) and (min-width: 551px) {
   .bottom_section {
     column-count: 2;
     display: flex;
     flex-wrap: wrap;
   }
   .bottom_item {
-    width: 50%;
-    max-width: 50%;
+    flex: 0 1 49%;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .logo {
-    display: none;
+@media screen and (max-width: 550px) {
+  .header {
+    flex-wrap: wrap;
   }
   .bottom_section {
     column-count: 1;
@@ -98,5 +106,6 @@ figcaption {
   .bottom_item {
     width: 100%;
     max-width: 100%;
+    flex-basis: 100%;
   }
 }
