@@ -78,11 +78,6 @@ figcaption {
   flex-grow: 10;
 }
 
-.bottom_text {
-  width: 100%;
-  flex-grow: 2;
-}
-
 @media screen and (max-width: 850px) and (min-width: 551px) {
   .bottom_section {
     column-count: 2;
