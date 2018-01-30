@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+
+  <head>
+    <!-- The head tag includes important information about the page -->
+    <meta charset="UTF-8">
+    <!-- This is the title of your page (what appears in the name of a browser tab) -->
+    <title>Memory Game</title>
+    <!-- The bootstrap css stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+
+  <body>
+
+    <!-- The Modal - template taken from w3schools.com -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p id="modal-text">Some text in the Modal..</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="restartYes()">Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="restartNo()">No</button>
+      </div>
+
+    </div>
+    <div class="container">
+      <header>
+        <h1>Matching Game</h1>
+        <span class="Timer">0 Seconds</span>
+      </header>
+
+      <section class="score-panel">
+        <ul class="stars list-inline">
+          <li><i id="star-1" class="fa fa-star list-inline-item"><img class="star" src="images/star.png" alt="star-pic" /></i></li>
+          <li><i id="star-2" class="fa fa-star list-inline-item"><img class="star" src="images/star.png" alt="star-pic" /></i></li>
+          <li><i id="star-3" class="fa fa-star list-inline-item"><img class="star" src="images/star.png" alt="star-pic" /></i></li>
+        </ul>
+
+        <span class="moves">0 Moves</span>
+
+        <div class="restart">
+          <i class="fa fa-repeat">
+              <button type="button" class="btn btn-default" onclick="restartGame()">Restart!</button>
+            </i>
+        </div>
+      </section>
+
+      <ul class="deck">
+        <li class="card">
+          <i class="fa fa-diamond"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-paper-plane-o"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-anchor"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-bolt"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-cube"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-anchor"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-leaf"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-bicycle"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-diamond"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-bomb"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-leaf"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-bomb"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-bolt"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-bicycle"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-paper-plane-o"></i>
+        </li>
+        <li class="card">
+          <i class="fa fa-cube"></i>
+        </li>
+      </ul>
+    </div>
+    <!-- the jQuery, popper and bootstap JS libraries-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
